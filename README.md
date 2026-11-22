@@ -36,7 +36,7 @@ full text.
 ## Sources by theme
 
 
-### Closest work (3)
+### Closest work 
 
 Papers that do what my thesis does: build a state-vector simulator from scratch, or simulate circuits with CUDA.
 
@@ -46,7 +46,7 @@ Papers that do what my thesis does: build a state-vector simulator from scratch,
 | [Diaz2025](notes/Diaz2025.md) | Memory Management Strategies for Software Quantum Simulators | Open access (CC BY 4.0) | [papers/Diaz2025.pdf](papers/Diaz2025.pdf) (publisher PDF) | [link](https://doi.org/10.3390/quantum7030041) |
 | [Gutierrez2010](notes/Gutierrez2010.md) | Quantum computer simulation using the CUDA programming model | Link only | none | [link](https://doi.org/10.1016/j.cpc.2009.09.021) |
 
-### Background (1)
+### Background 
 
 Definitions of qubits, gates and circuits.
 
@@ -54,7 +54,7 @@ Definitions of qubits, gates and circuits.
 |---|---|---|---|---|
 | [NielsenChuang2010](notes/NielsenChuang2010.md) | Quantum Computation and Quantum Information (10th Anniversary Edition) | Link only | none | [link](https://doi.org/10.1017/CBO9780511976667) |
 
-### Surveys and reviews (1)
+### Surveys and reviews 
 
 Overviews of classical simulation methods and their acceleration.
 
@@ -62,7 +62,7 @@ Overviews of classical simulation methods and their acceleration.
 |---|---|---|---|---|
 | [Cicero2024](notes/Cicero2024.md) | Simulation of Quantum Computers: Review and Acceleration Opportunities | Open access | [papers/Cicero2024.pdf](papers/Cicero2024.pdf) (arXiv preprint) | [link](https://arxiv.org/abs/2410.12660) |
 
-### Building a simulator from scratch (1)
+### Building a simulator from scratch 
 
 Tutorials that explain the core algorithms step by step.
 
@@ -71,7 +71,7 @@ Tutorials that explain the core algorithms step by step.
 | [McGuffin2025](notes/McGuffin2025.md) | How to Write a Simulator for Quantum Circuits from Scratch: A Tutorial | Open access | [papers/McGuffin2025.pdf](papers/McGuffin2025.pdf) (arXiv preprint) | [link](https://arxiv.org/abs/2506.08142) |
 
 
-### GPU simulators and libraries (1)
+### GPU simulators and libraries 
 
 GPU-based simulators and NVIDIA's libraries.
 
@@ -79,7 +79,7 @@ GPU-based simulators and NVIDIA's libraries.
 |---|---|---|---|---|
 | [Jones2019](notes/Jones2019.md) | QuEST and High Performance Simulation of Quantum Computers | Open access (CC BY 4.0) | [papers/Jones2019.pdf](papers/Jones2019.pdf) (publisher PDF) | [link](https://doi.org/10.1038/s41598-019-47174-9) |
 
-### Gate fusion and data locality (1)
+### Gate fusion and data locality 
 
 Optimisations that combine gates or reduce data movement; relevant to the optional fused reversible-gate kernel.
 
@@ -87,7 +87,7 @@ Optimisations that combine gates or reduce data movement; relevant to the option
 |---|---|---|---|---|
 | [Kuzmin2025](notes/Kuzmin2025.md) | TQml Simulator: optimized simulation of quantum machine learning | Open access | [papers/Kuzmin2025.pdf](papers/Kuzmin2025.pdf) (arXiv preprint) | [link](https://arxiv.org/abs/2506.04891) |
 
-### Python and CUDA tooling (2)
+### Python and CUDA tooling 
 
 How CUDA kernels are written and launched from Python.
 
@@ -96,7 +96,7 @@ How CUDA kernels are written and launched from Python.
 | [Okuta2017](notes/Okuta2017.md) | CuPy: A NumPy-Compatible Library for NVIDIA GPU Calculations | Free to read on publisher site | [papers/Okuta2017.pdf](papers/Okuta2017.pdf) (workshop PDF) | [link](http://learningsys.org/nips17/assets/papers/paper_16.pdf) |
 | [Efthymiou2022](notes/Efthymiou2022.md) | Quantum simulation with just-in-time compilation | Open access (CC BY 4.0) | [papers/Efthymiou2022.pdf](papers/Efthymiou2022.pdf) (publisher PDF) | [link](https://doi.org/10.22331/q-2022-09-22-814) |
 
-### Benchmarking CPU vs GPU (1)
+### Benchmarking CPU vs GPU 
 
 Studies that measure GPU speed-up and give a methodology for my comparison.
 
@@ -104,9 +104,7 @@ Studies that measure GPU speed-up and give a methodology for my comparison.
 |---|---|---|---|---|
 | [Faj2023](notes/Faj2023.md) | Quantum Computer Simulations at Warp Speed: Assessing the Impact of GPU Acceleration | Not open access | [papers/Faj2023.pdf](papers/Faj2023.pdf) (arXiv preprint) | [link](https://arxiv.org/abs/2307.14860) |
 
-### Max-Cut and QAOA at 15-20 qubits (4)
-
-Added after the supervisor meeting: the Max-Cut workload (QAOA) and what happens to CPU vs GPU performance around 15-20 qubits.
+### Max-Cut and QAOA at 15-20 qubits 
 
 | Key | Title | Access | PDF in repo | Original paper |
 |---|---|---|---|---|
@@ -115,21 +113,7 @@ Added after the supervisor meeting: the Max-Cut workload (QAOA) and what happens
 | [Stein2024](notes/Stein2024.md) | CUAOA: A Novel CUDA-Accelerated Simulation Framework for the QAOA | Open access | [papers/Stein2024.pdf](papers/Stein2024.pdf) (arXiv preprint) | [link](https://arxiv.org/abs/2407.13012) |
 | [Kumaresan2026](notes/Kumaresan2026.md) | GPU-Accelerated Quantum Simulation: Empirical Backend Selection, Gate Fusion, and Adaptive Precision | Open access | [papers/Kumaresan2026.pdf](papers/Kumaresan2026.pdf) (arXiv preprint) | [link](https://arxiv.org/abs/2604.03816) |
 
-## Gaps this survey points to
 
-- CUDA state-vector simulation is not new: [Gutierrez2010](notes/Gutierrez2010.md) did it in C/CUDA, and
-  [Jones2019](notes/Jones2019.md), Suzuki2021 and Bayraktar2023
-  are mature GPU simulators. The thesis claims no novelty here. Its value is a documented from-scratch build
-  and a measured CPU vs GPU comparison.
-- The from-scratch guides ([Diaz2024](notes/Diaz2024.md), [McGuffin2025](notes/McGuffin2025.md),
-  Nilsson2023) stop at CPU execution (OpenMP/MPI or single-threaded). None of them
-  covers writing the CUDA kernels.
-- The closest Python + GPU design is [Efthymiou2022](notes/Efthymiou2022.md) (qibojit), a full framework rather
-  than a minimal teaching-scale simulator.
-- Gate fusion is established (Fatima2021, Horii2021). Combining
-  permutation gates (X, CNOT, SWAP) into one permutation is already described in [Kuzmin2025](notes/Kuzmin2025.md),
-  Qulacs supports reversible Boolean functions as permutation-matrix gates (Suzuki2021),
-  and cuStateVec applies generalized permutation matrices (Bayraktar2023). So the
   optional reversible-block kernel is an optimisation to implement and measure, not a novelty claim.
 - Max-Cut/QAOA on GPU is covered by [Lykov2023](notes/Lykov2023.md) (QOKit, Python + GPU) and
   [Stein2024](notes/Stein2024.md) (CUAOA, native CUDA). The one-pass diagonal cost layer from Lykov2023 fits the
