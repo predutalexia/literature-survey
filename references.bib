@@ -1,0 +1,165 @@
+% Literature survey: GPU-accelerated quantum circuit simulator (Python + CUDA)
+% Managed with JabRef. Keys match notes/ and papers/.
+
+% ---- Closest work
+
+@misc{Diaz2024,
+  author       = {D{\'i}az, Gilberto and Steffenel, Luiz and Barrios, Carlos and Couturier, Jean},
+  title        = {How to Build a Software Quantum Simulator},
+  howpublished = {Preprints.org},
+  year         = {2024},
+  doi          = {10.20944/preprints202409.1497.v1},
+  note         = {Preprint, not peer-reviewed. Also listed on ResearchGate as publication 384158127}
+}
+
+@article{Diaz2025,
+  author  = {D{\'i}az, Gilberto and Steffenel, Luiz and Barrios, Carlos and Couturier, Jean},
+  title   = {Memory Management Strategies for Software Quantum Simulators},
+  journal = {Quantum Reports},
+  year    = {2025},
+  volume  = {7},
+  number  = {3},
+  pages   = {41},
+  doi     = {10.3390/quantum7030041}
+}
+
+@article{Gutierrez2010,
+  author  = {Guti{\'e}rrez, Eladio and Romero, Sergio and Trenas, Mar{\'i}a A. and Zapata, Emilio L.},
+  title   = {Quantum computer simulation using the {CUDA} programming model},
+  journal = {Computer Physics Communications},
+  year    = {2010},
+  volume  = {181},
+  number  = {2},
+  pages   = {283--300},
+  doi     = {10.1016/j.cpc.2009.09.021}
+}
+
+% ---- Background
+
+@book{NielsenChuang2010,
+  author    = {Nielsen, Michael A. and Chuang, Isaac L.},
+  title     = {Quantum Computation and Quantum Information},
+  edition   = {10th Anniversary},
+  publisher = {Cambridge University Press},
+  year      = {2010},
+  doi       = {10.1017/CBO9780511976667}
+}
+
+% ---- Surveys and reviews
+
+@misc{Cicero2024,
+  author        = {Cicero, Alessio and Maleki, Mohammad Ali and Azhar, Muhammad Waqar and Kockum, Anton Frisk and Trancoso, Pedro},
+  title         = {Simulation of Quantum Computers: Review and Acceleration Opportunities},
+  year          = {2024},
+  eprint        = {2410.12660},
+  archivePrefix = {arXiv},
+  primaryClass  = {quant-ph},
+  doi           = {10.48550/arXiv.2410.12660}
+}
+
+% ---- Building a simulator from scratch
+
+@misc{McGuffin2025,
+  author        = {McGuffin, Michael J. and Robert, Jean-Marc and Ikeda, Kazuki},
+  title         = {How to Write a Simulator for Quantum Circuits from Scratch: A Tutorial},
+  year          = {2025},
+  eprint        = {2506.08142},
+  archivePrefix = {arXiv},
+  primaryClass  = {quant-ph},
+  doi           = {10.48550/arXiv.2506.08142}
+}
+
+% ---- CPU and HPC simulators
+
+% ---- GPU simulators and libraries
+
+@article{Jones2019,
+  author  = {Jones, Tyson and Brown, Anna and Bush, Ian and Benjamin, Simon C.},
+  title   = {{QuEST} and High Performance Simulation of Quantum Computers},
+  journal = {Scientific Reports},
+  year    = {2019},
+  volume  = {9},
+  pages   = {10736},
+  doi     = {10.1038/s41598-019-47174-9}
+}
+
+% ---- Gate fusion and data locality
+
+@misc{Kuzmin2025,
+  author        = {Kuzmin, Viacheslav and Kyriacou, Basil and Protasevich, Tatjana and Papierz, Mateusz and Kordzanganeh, Mo and Melnikov, Alexey},
+  title         = {{TQml} Simulator: optimized simulation of quantum machine learning},
+  year          = {2025},
+  eprint        = {2506.04891},
+  archivePrefix = {arXiv},
+  primaryClass  = {quant-ph}
+}
+
+% ---- Python and CUDA tooling
+
+@inproceedings{Okuta2017,
+  author    = {Okuta, Ryosuke and Unno, Yuya and Nishino, Daisuke and Hido, Shohei and Loomis, Crissman},
+  title     = {{CuPy}: A {NumPy}-Compatible Library for {NVIDIA} {GPU} Calculations},
+  booktitle = {Proceedings of Workshop on Machine Learning Systems (LearningSys) at NIPS 2017},
+  year      = {2017},
+  url       = {http://learningsys.org/nips17/assets/papers/paper_16.pdf}
+}
+
+@article{Efthymiou2022,
+  author  = {Efthymiou, Stavros and Lazzarin, Marco and Pasquale, Andrea and Carrazza, Stefano},
+  title   = {Quantum simulation with just-in-time compilation},
+  journal = {Quantum},
+  year    = {2022},
+  volume  = {6},
+  pages   = {814},
+  doi     = {10.22331/q-2022-09-22-814}
+}
+
+% ---- Benchmarking CPU vs GPU
+
+@inproceedings{Faj2023,
+  author    = {Faj, Jennifer and Peng, Ivy and Wahlgren, Jacob and Markidis, Stefano},
+  title     = {Quantum Computer Simulations at Warp Speed: Assessing the Impact of {GPU} Acceleration: A Case Study with {IBM Qiskit Aer}, {Nvidia Thrust} \& {cuQuantum}},
+  booktitle = {2023 IEEE 19th International Conference on e-Science (e-Science)},
+  pages     = {1--10},
+  year      = {2023},
+  note      = {arXiv:2307.14860}
+}
+
+% ---- Max-Cut and QAOA at 15-20 qubits
+
+@misc{Farhi2014,
+  author        = {Farhi, Edward and Goldstone, Jeffrey and Gutmann, Sam},
+  title         = {A Quantum Approximate Optimization Algorithm},
+  year          = {2014},
+  eprint        = {1411.4028},
+  archivePrefix = {arXiv},
+  primaryClass  = {quant-ph},
+  doi           = {10.48550/arXiv.1411.4028}
+}
+
+@inproceedings{Lykov2023,
+  author    = {Lykov, Danylo and Shaydulin, Ruslan and Sun, Yue and Alexeev, Yuri and Pistoia, Marco},
+  title     = {Fast Simulation of High-Depth {QAOA} Circuits},
+  booktitle = {Fourth International Workshop on Quantum Computing Software (QCS), SC23},
+  year      = {2023},
+  note      = {arXiv:2309.04841. Code: QOKit, https://github.com/jpmorganchase/QOKit}
+}
+
+@misc{Stein2024,
+  author        = {Stein, Jonas and Blenninger, Jonas and Bucher, David and Eder, Josef Peter and {\c{C}}etiner, Elif and Zorn, Maximilian and Linnhoff-Popien, Claudia},
+  title         = {{CUAOA}: A Novel {CUDA}-Accelerated Simulation Framework for the {QAOA}},
+  year          = {2024},
+  eprint        = {2407.13012},
+  archivePrefix = {arXiv},
+  primaryClass  = {quant-ph}
+}
+
+@misc{Kumaresan2026,
+  author        = {Kumaresan, Poornima and Muruganantham, Pavithra and Rajendran, Lakshmi and Sivasubramani, Santhosh},
+  title         = {{GPU}-Accelerated Quantum Simulation: Empirical Backend Selection, Gate Fusion, and Adaptive Precision},
+  year          = {2026},
+  eprint        = {2604.03816},
+  archivePrefix = {arXiv},
+  primaryClass  = {quant-ph}
+}
+
