@@ -112,14 +112,3 @@ Studies that measure GPU speed-up and give a methodology for my comparison.
 | [Lykov2023](notes/Lykov2023.md) | Fast Simulation of High-Depth QAOA Circuits | Open access | [papers/Lykov2023.pdf](papers/Lykov2023.pdf) (arXiv preprint) | [link](https://arxiv.org/abs/2309.04841) |
 | [Stein2024](notes/Stein2024.md) | CUAOA: A Novel CUDA-Accelerated Simulation Framework for the QAOA | Open access | [papers/Stein2024.pdf](papers/Stein2024.pdf) (arXiv preprint) | [link](https://arxiv.org/abs/2407.13012) |
 | [Kumaresan2026](notes/Kumaresan2026.md) | GPU-Accelerated Quantum Simulation: Empirical Backend Selection, Gate Fusion, and Adaptive Precision | Open access | [papers/Kumaresan2026.pdf](papers/Kumaresan2026.pdf) (arXiv preprint) | [link](https://arxiv.org/abs/2604.03816) |
-
-
-  optional reversible-block kernel is an optimisation to implement and measure, not a novelty claim.
-- Max-Cut/QAOA on GPU is covered by [Lykov2023](notes/Lykov2023.md) (QOKit, Python + GPU) and
-  [Stein2024](notes/Stein2024.md) (CUAOA, native CUDA). The one-pass diagonal cost layer from Lykov2023 fits the
-  Max-Cut circuit better than reversible-block fusion, because in Max-Cut every CNOT pair surrounds an RZ.
-- At 15-20 qubits the state vector is small (2^20 complex128 values = 16 MiB), and the CPU/GPU crossover sits
-  in this range ([Kumaresan2026](notes/Kumaresan2026.md)): measuring where my own simulator crosses over is a
-  concrete, checkable result.
-
-Total: 15 sources.
